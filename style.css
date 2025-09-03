@@ -1,0 +1,919 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body{
+    background-image:url("imgb.png");
+    background-size: cover;   
+    background-repeat: no-repeat; 
+    background-position: center;
+    height: 100vh;
+    width:100%;
+    font-family: 'Inter', 'Roboto', 'Segoe UI', sans-serif;
+}
+
+.navbar{
+    width: 100%;
+    height:80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+   height: 80px;
+   max-width:auto;
+   margin-left: 100px;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+}
+.list li {
+   margin-left: 40px;
+   margin-right: 40px;
+}
+
+.list li a {
+    list-style: none;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.btn {
+  width: 65px;
+  height: 40px;
+  background-color: rgb(221, 83, 32);
+  border: none;
+  border-radius: 10px  ;
+  margin-right: 100px ;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.btn:hover,.tag:hover{
+    transform: scale(1.04);
+}
+
+.hero {
+    display: flex;
+}
+
+ .part1 {
+    width: 50%;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+} 
+
+.part1 P {
+    color: rgb(221, 83, 32);
+    font-size: 20px;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    margin-right: 25px;
+    font-weight: bold;
+}
+
+.part1 h2{
+   font-size: 40px;
+   margin-top: 8px;
+   font-weight: bold;
+}
+
+.tag {
+    height: 50px;
+    width:450px;
+    background-color:rgb(32, 31, 31);
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    box-shadow: 4px 4px 15px rgba(128, 128, 128, 0.5);
+    margin-top: 30px; 
+    margin-left:140px ;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;   
+    font-weight: bold;
+}
+
+.tag i {
+    color:rgb(221, 83, 32);
+}
+
+.part2{
+    height: 100%;
+    width: 50%;
+}
+
+.form {
+    height: 780px;
+    width:480px;
+    color: black;
+    background-color: white;
+    border: 10px solid black;
+    border-radius: 20px;
+    box-shadow: 
+        0px 0px 25px rgba(255, 255, 255, 0.3),  
+        0px 0px 50px rgba(255, 255, 255, 0.2);
+    margin-top: 70px;
+    line-height:32px;
+    margin-left: 25px;
+}
+
+.form h3 {
+    margin-top: 30px;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+.form p{
+    margin-left: 25px;
+    color: gray;
+}
+
+.inp {
+    margin-left: 25px;
+    color: gray;
+    accent-color: black;
+}
+
+.user-info{
+    margin-top: 30px;
+    line-height: 15px;
+}
+
+.user-info p{
+    margin-top: 15px;
+}
+
+.info::placeholder{
+    padding-left: 15px;
+}
+
+.info {
+    margin-left: 25px;
+    height: 35px;
+    width: 410px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.submit-btn{
+    margin-left: 25px;
+    height: 40px;
+    width: 410px;
+    border-radius: 10px;
+    background-color: rgb(221, 83, 32);
+    color: white;
+    border: none;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+#bootcamp ,#launches{
+    display: flex;
+    margin-left: 170px;
+    color: black;
+    margin-top: 232px;
+}
+
+#bootcamp i ,#launches i{
+    font-size: 30px;
+    color:rgb(221, 83, 32) ;
+}
+
+.job,.new {
+    background-color: white;
+    width:80%;
+    height: 40%;
+    display: flex;
+    color: black;
+    margin-top: 65px;
+    margin-left: 170px;
+    border: none;
+}
+
+.text1,.text3{
+    font-size: 25px;
+    font-weight: bolder;
+    margin-left: 20px;
+}
+.text2,.text4{
+    height: 23px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 60px;
+    background-color: rgb(224, 194, 154);
+    border-radius:3px ;
+}
+
+.developer,.data ,.tech,.non-tech{
+   width:45%;
+   height: 80%;
+   border: none;
+   border-radius: 10px;
+   background-color: rgb(227, 234, 240);
+   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3),
+               0px 0px 10px rgba(0, 0, 0, 0.2);
+               flex-wrap: wrap;
+}
+
+.data,.non-tech {
+    margin-left: 50px;
+    flex-wrap: wrap;
+}
+
+.stack,.analytics,.genai,.ai{
+    width:80%;
+    min-height: 40%;
+    margin-top: 50px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bolder;
+    flex-wrap: wrap;
+}
+
+.developer:hover,.data:hover,.tech:hover,.non-tech:hover{
+    transform: scale(1.04);
+}
+
+.stack i,.analytics i,.genai i,.ai i{
+    font-size: 27px;
+    color: rgb(221, 83, 32) ;
+    margin-right: 20px;
+}
+
+.nav1,.nav2,.nav3,.nav4 {
+    list-style: none;
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    height: 20%;
+}
+.nav1 li,.nav2 li ,.nav3 li,.nav4 li{
+   margin-left: 30px;
+   margin-right: 20px;
+}
+
+.nav1 li a ,.nav2 li a,.nav3 li a,.nav4 li a{
+    list-style: none;
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+    justify-content: space-between;
+    height: 23px;
+    width: 120px;
+    background-color: rgb(231, 223, 212);
+    border-radius: 3px;
+}
+
+#headline {
+    color: black;
+    margin-left: 170px;
+    margin-top: 160px;
+}
+
+.award{
+   display: flex;
+}
+
+.award h3{
+    font-size: 25px;
+    font-weight: bolder;
+    margin-left: 20px;
+}
+
+.award i{
+    font-size: 30px;
+    color: rgb(221, 83, 32) ;
+}
+
+#headline p {
+    height: 23px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    margin-left: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(224, 194, 154);
+    border-radius:3px ;
+}
+
+.iit,.nit{
+    width: 90%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-left: 50px auto;
+    color: black;
+    flex-wrap: wrap;
+}
+
+.iit1,.iit4{
+    width:30%;
+    height: 75%;
+    flex-wrap: wrap;
+    border: none;
+    /* margin-left: 130px; */
+    border-radius: 10px;
+    background-color: rgb(227, 234, 240);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3),
+               0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.iit2,.iit3,.iit5,.iit6 {
+    width:30%;
+    height: 75%;
+    border: none;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    margin-left: 25px;
+    background-color: rgb(227, 234, 240);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3),
+               0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.img1,.img2,.img3,.img4,.img5,.img6 {
+    width: 90%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    margin:12px;
+}
+
+.content1 h3,.content2 h3,.content3 h3,.content4 h3,.content6 h3{
+   margin-top: 30px;
+   margin-left: 30px;
+   font-size: 20px;
+}
+
+.content2 h3,.content5 h3{
+    margin-top: 42px;
+    margin-left: 30px;
+}
+
+.content1 p,.content2 p,.content3 p,.content4 p,.content5 p,.content6 p{
+   margin-top: 50px;
+   margin-left: 30px;
+   font-size: 13px;
+}
+
+.content5 p{
+    margin-top: 83px;
+}
+
+.lang1,.lang2,.lang3,.lang4,.lang5,.lang6{
+  display: flex;
+  margin-left: 30px;
+}
+
+.lang1 p,.lang2 p,.lang3 p,.lang4 p,.lang5 p,.lang6 p{
+    margin-left: 42px;
+    font-size: 11px;
+    margin-bottom: 30px;
+    margin-top: 45px;
+}
+
+.bottom1a,.bottom2a,.bottom3a,.bottom4a,.bottom5a,.bottom6a{
+    width: 35px;
+    height: 33px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.bottom1,.bottom2,.bottom3,.bottom4,.bottom5,.bottom6 {
+  width: 35px;
+  height: 33px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.std p{
+    height: 27px;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 210px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(224, 194, 154);
+    border-radius:5px ;
+}
+
+.iit1:hover,.iit2:hover,.iit3:hover,.iit4:hover,.iit5:hover,.iit6:hover{
+    transform: scale(1.04);
+}
+
+#mentorship {
+    color: black;
+    margin-left: 170px;
+    margin-top: 100px;
+}
+
+.intern{
+    display:flex;
+}
+
+.intern i{
+    font-size: 30px;
+    color: rgb(221, 83, 32) ;
+}
+
+#mentorship p {
+    height: 23px;
+    width: 80%;
+    margin-top: 35px;
+    margin-left: 40px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.intern h3{
+    font-size: 25px;
+    font-weight: bolder;
+    margin-left: 20px;
+}
+
+.session{
+    width: 70%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-left: 170px;
+    color: black;
+    margin-bottom: 80px;
+}
+
+.interveiw{
+    width:33%;
+    height: 75%;
+    border: none;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    background-color: rgb(227, 234, 240);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3),
+               0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile,.project {
+    width:33%;
+    height: 75%;
+    border: none;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    margin-left: 25px;
+    background-color: rgb(227, 234, 240);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3),
+               0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pic1,.pic2,.pic3 {
+    width: 90%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    margin:12px;
+}
+
+.details1 h3,.details3 h3{
+   margin-top: 30px;
+   margin-left: 30px;
+   font-size: 20px;
+}
+
+.details2 h3{
+    margin-top: 42px;
+    margin-left: 30px;
+}
+
+.details1 p,.details2 p,.details3 p{
+   margin-top: 35px;
+   margin-left: 30px;
+   font-size: 16px;
+}
+
+.profile:hover,.interveiw:hover,.project:hover{
+    transform: scale(1.04);
+}
+
+/* footer */
+
+.footer{
+    background-color:#2d1a11;
+    display: flex;
+    justify-content: space-around;
+    color:rgb(172, 168, 168);
+    height: 80%;
+}
+
+.row1{
+    margin-top: 150px;
+    line-height: 3.0;
+}
+.row1 img {
+    width: 200px;
+    height: 90px;
+}
+
+.row1 h4 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.row1 p{
+    font-size: 20px;
+}
+
+.row2,.row3,.row4 {
+    margin-top: 150px;
+    line-height: 2.0;
+}
+
+.row2 h4,.row3 h4,.row4 h4 {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.row2 li,.row3 li,.row4 li {
+    list-style: none;
+    font-size: 15px;
+}
+
+.media {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #2d1a11;
+}
+.media p {
+    color:grey;
+    font-size: 16px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.social a i {
+    color: grey;
+    margin-left: 30px;
+    font-size: 30px;
+}
+
+/* ======================================= */
+/* RESPONSIVE MEDIA QUERIES */
+/* ======================================= */
+
+/* Tablet Styles (768px to 1024px) */
+@media screen and (max-width: 1024px) {
+    .logo img {
+        margin-left: 50px;
+        height: 60px;
+    }
+    
+    .btn {
+        margin-right: 50px;
+    }
+    
+    .list li {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .part1 h2 {
+        font-size: 35px;
+    }
+    
+    .tag {
+        width: 400px;
+        margin-left: 100px;
+    }
+    
+    .form {
+        width: 420px;
+        height: 650px;
+    }
+    
+    .info {
+        width: 370px;
+    }
+    
+    .submit-btn {
+        width: 370px;
+    }
+    
+    #bootcamp, #launches, #headline, #mentorship {
+        margin-left: 100px;
+    }
+    
+    .job, .new, .session {
+        margin-left: 100px;
+        width: 85%;
+    }
+    
+    .iit, .nit {
+        width: 95%;
+        margin-left: 100px;
+    }
+    
+    .std p {
+        margin-left: 150px;
+    }
+}
+
+/* Mobile Styles (768px and below) */
+@media screen and (max-width: 768px) {
+    .navbar {
+        height: 70px;
+        padding: 0 20px;
+    }
+    
+    .logo img {
+        height: 50px;
+        margin-left: 0;
+    }
+    
+    .list {
+        display: none; /* Hide navigation menu on mobile - you might want to add hamburger menu */
+    }
+    
+    .btn {
+        margin-right: 0;
+        width: 60px;
+        height: 35px;
+        font-size: 14px;
+    }
+    
+    .hero {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .part1, .part2 {
+        width: 100%;
+    }
+    
+    .part1 P {
+        font-size: 18px;
+        margin-top: 20px;
+        margin-right: 0;
+    }
+    
+    .part1 h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .tag {
+        width: 90%;
+        margin-left: 5%;
+        height: auto;
+        padding: 15px;
+        font-size: 14px;
+    }
+    
+
+
+    .form {
+        width: 95%;
+        height: auto;
+        margin: 30px auto;
+        padding: 20px;
+ 
+
+    }
+
+    
+    .info {
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    .submit-btn {
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    #bootcamp, #launches, #headline, #mentorship {
+        margin-left: 20px;
+        margin-top: 80px;
+    }
+
+    #launches{
+        margin-bottom: 90px;
+    }
+    
+    .job, .new {
+        flex-direction: column;
+        width: 95%;
+        margin-left: 2.5%;
+        height: auto;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .developer, .data, .tech, .non-tech {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        padding: 20px;
+    }
+    
+    .stack, .analytics, .genai, .ai {
+        font-size: 20px;
+        margin: 20px 0;
+        text-align: center;
+    }
+    
+    .nav1, .nav2, .nav3, .nav4 {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .nav1 li, .nav2 li, .nav3 li, .nav4 li {
+        margin: 5px;
+    }
+    
+    .iit, .nit {
+        flex-direction: column;
+        width: 95%;
+        margin-left: 2.5%;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .iit1, .iit2, .iit3, .iit4, .iit5, .iit6 {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+    
+    .lang1 p,.lang2 p,.lang3 p,.lang4 p,.lang5 p,.lang6 p{
+        margin-left: 10px;
+    }
+    .content1 h3, .content2 h3, .content3 h3, .content4 h3, .content5 h3, .content6 h3 {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+    
+    .content1 p, .content2 p, .content3 p, .content4 p, .content5 p, .content6 p {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    
+    .std p {
+        margin-left: 20px;
+        width: auto;
+        padding: 10px 20px;
+    }
+    
+    .session {
+        flex-direction: column;
+        height: auto !important;
+        width: 95%;
+        margin-left: 2.5%;
+        gap: 20px;
+        padding: 20px;
+        margin-bottom: 90px;
+    }
+    
+    .interveiw, .profile, .project {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    
+    .details1 h3, .details2 h3, .details3 h3 {
+        font-size: 18px;
+    }
+    
+    .details1 p, .details2 p, .details3 p {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 40px 20px;
+    }
+    
+    .row1, .row2, .row3, .row4 {
+        margin-top: 30px;
+        width: 100%;
+    }
+    
+    .row1 img {
+        width: 150px;
+        height: 70px;
+    }
+    
+    .media {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 15px;
+    }
+    
+    .social {
+        margin: 0;
+    }
+    
+    .social a i {
+        margin: 0 15px;
+        font-size: 25px;
+    }
+}
+
+/* Small Mobile Styles (480px and below) */
+@media screen and (max-width: 480px) {
+    .part1 P {
+        font-size: 16px;
+    }
+    
+    .part1 h2 {
+        font-size: 24px;
+    }
+    
+    .tag {
+        font-size: 12px;
+        padding: 10px;
+    }
+    
+    .text1, .text3 {
+        font-size: 20px;
+    }
+    
+    .award h3, .intern h3 {
+        font-size: 20px;
+    }
+    
+    .stack, .analytics, .genai, .ai {
+        font-size: 18px;
+    }
+    
+    .content1 h3, .content2 h3, .content3 h3, .content4 h3, .content5 h3, .content6 h3 {
+        font-size: 16px;
+    }
+    
+    .details1 h3, .details2 h3, .details3 h3 {
+        font-size: 16px;
+    }
+    
+    .row1 h4 {
+        font-size: 20px;
+    }
+    
+    .row1 p {
+        font-size: 16px;
+    }
+}

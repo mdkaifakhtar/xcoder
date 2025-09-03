@@ -1,0 +1,173 @@
+body {
+    background-color: white;
+    margin: 0;
+    height: 100vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-family: 'Inter', 'Roboto', 'Segoe UI', sans-serif;
+}
+
+.login{
+    height: 80%;
+    width: 40%;
+    /* border: 2px solid black; */
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 1.0);
+    border-radius: 15px;
+}
+.logo img {
+    height: 80px;
+    max-width:auto;
+    margin-left: 40px;
+ } 
+
+ .text,.or {
+    margin-left: 60px;
+    font-weight: bold;
+ }
+
+ .google ,.linkedin {
+    height: 45px;
+    width: 70%;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 60px;
+    justify-content: center; 
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    
+ } 
+
+ .google p,.linkedin p {
+    font-weight: bold;
+    margin-right: 15px;
+ }
+
+ .google img,.linkedin img {
+    height: 30px;
+    max-width:auto;
+    margin-left: 50px;
+ }
+
+ .email {
+    height: 45px;
+    width: 70%;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 60px;
+    justify-content: center; 
+    align-items: center;
+    border: 2px solid grey;
+    border-radius: 10px;
+ }
+
+ .email::placeholder{
+    margin-left: 60px;
+ } 
+
+ .btn {
+    height: 45px;
+    width: 70%;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 60px;
+    justify-content: center; 
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(221, 83, 32);
+    font-size: 15px;
+ }
+
+/* Laptop and larger screens (above 1024px) */
+@media screen and (min-width: 1025px) {
+   .login {
+     width: 40%;
+     height: 80%;
+   }
+   .logo img {
+     height: 80px;
+     margin-left: 40px;
+   }
+   .google, .linkedin, .email, .btn {
+     width: 70%;
+     height: 35px;          /* Reduced height */
+     margin-left: 60px;
+     margin-top: 15px;
+     margin-bottom: 15px;
+   }
+   .google img, .linkedin img {
+     height: 30px;
+     margin-left: 50px;
+   }
+   .text, .or {
+     margin-left: 60px;
+   }
+ }
+ 
+ /* Tablet screens (between 769px and 1024px) */
+ @media screen and (min-width: 769px) and (max-width: 1024px) {
+   .login {
+     width: 60%;
+     height: 70%;
+     margin: 20px auto;
+   }
+   .logo img {
+     height: 70px;
+     margin-left: 20px;
+   }
+   .google, .linkedin, .email, .btn {
+     width: 80%;
+     height: 35px;          /* Reduced height */
+     margin-left: 20px;
+     margin-top: 15px;
+     margin-bottom: 15px;
+   }
+   .google img, .linkedin img {
+     height: 25px;
+     margin-left: 20px;
+   }
+   .text, .or {
+     margin-left: 20px;
+   }
+ }
+ 
+ /* Mobile screens (up to 768px including small devices) */
+ @media screen and (max-width: 768px) {
+   body {
+     height: auto;
+     padding: 20px 0;
+   }
+   .login {
+     width: 95%;
+     height: auto;
+     margin: 0 auto;
+     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+     border-radius: 15px;
+   }
+   .logo img {
+     height: 60px;
+     display: block;
+     margin: 0 auto 10px auto;
+   }
+   .google, .linkedin, .email, .btn {
+     width: 90%;
+     height: 35px;          /* Reduced height */
+     margin: 15px auto 15px auto;
+     justify-content: center;
+     margin-left: 13px;
+   }
+   .google img, .linkedin img {
+     height: 20px;
+     margin-left: 10px;
+   }
+   .text, .or {
+     margin-left: 10px;
+     text-align: center;
+   }
+ }
+ 
